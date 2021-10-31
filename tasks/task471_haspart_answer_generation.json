@@ -8,12 +8,12 @@
     "Categories": [
         "Answer Generation"
     ],
-    "Definition": "Given an entity as input, output another entity which is part of the input entity. These are entities of meronym. In linguistics, meronymy is a semantic relation between a meronym denoting a part and a holonym denoting a whole. In simpler terms, a meronym (i.e., output entity) is in a part-of relationship with its holonym (i.e., input entity).",
-    "Positive Examples": [
+    "Definition": "Given an entity as input, answer with another entity which is part of the input entity.",
+    "Positive Examples":[
         {
             "input": "plant",
             "output": "stem",
-            "explanation": "The answer is correct. Because a stem is one of two main structural axes of a vascular plant, the other being the root. Therefore, stem (i.e., meronym) is the part of plant (i.e., holonym)."
+            "explanation": "The answer is correct. Because a stem is one a part of a plant."
         },
         {
             "input": "hagfish",
@@ -23,7 +23,7 @@
         {
             "input": "bird",
             "output": "feather",
-            "explanation": "Most of the birds have feathers. Therefore, these are the entities of the meronym."
+            "explanation": "Most of the birds have feathers. Therefore, this answer is correct."
         },
         {
             "input": "surface",
@@ -41,6 +41,11 @@
             "input": "food",
             "output": "brick",
             "explanation": "This is wrong answer because brick is not edible. Hence, brick is not part of any food."
+        },
+        {
+           "input": "milk",
+           "output":  "breast",
+           "explanation": "Milk is a part of a breast, not the other way around. This is not a good answer."
         }
     ],
     "Instances": [

@@ -8,17 +8,23 @@
     "Categories": [
         "Answer Generation"
     ],
-    "Definition": "Given a sentence, generate what should be the most likely next statement. The next statement should be reasonable and logically correct.",
+    "Definition": "You are given a piece of text. You should answer with what is the most likely the rest of the text. The completion should be reasonable and logically correct.",
     "Positive Examples": [
         {
             "input": "We notice a man in a kayak and a yellow helmet coming in from the left. As he approaches, his kayak ",
-            "output": "flips upside - down",
-            "explanation": "Flipping of the kayak is a probable event. It is a logical next statement, given the context."
+            "output": "flips upside-down",
+            "explanation": "Flipping of the kayak is a probable event. It is a logical completion, given the context."
         },
         {
             "input": "On stage, a woman takes a seat at the piano. She",
             "output": "nervously sets her fingers on the keys.",
             "explanation": "The woman is playing a piano on the stage. So she is likely to be nervous and it is also logical that she will playing the piano."
+        },
+        {
+            "input": "People are sitting on exercise machines in a room. They all",
+            "output": "begin working out and pulling on a rope.",
+            "explanation": "This is a good completion for the given text."
+
         }
     ],
     "Negative Examples": [
@@ -134,12 +140,6 @@
             "input": "From the boat, someone struggles to heft up the raft. Lying back, he",
             "output": [
                 "uses one leg as extra leverage."
-            ]
-        },
-        {
-            "input": "People are sitting on exercise machines in a room. They all",
-            "output": [
-                "begin working out and pulling on a rope."
             ]
         },
         {

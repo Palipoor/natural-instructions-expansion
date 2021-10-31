@@ -8,12 +8,12 @@
     "Categories": [
         "Answer Generation"
     ],
-    "Definition": "Given two entities as input, classify as \"yes\" if second entity is the part of the first entity. Otherwise classify them as \"no\". These are entities of meronym In linguistics, meronymy is a semantic relation between a meronym denoting a part and a holonym denoting a whole. In simpler terms, a meronym (i.e., second entity) is in a part-of relationship with its holonym (i.e., first entity).",
+    "Definition": "Given two entities as input, classify as \"yes\" if second entity is the part of the first entity. Otherwise classify them as \"no\".",
     "Positive Examples": [
         {
             "input": "Entity 1: plant \n Entity 2: leaf",
             "output": "yes",
-            "explanation": "The answer is correct. Because the leaf is part of the plant. Therefore, here leaf is meronym and the plant is holonym."
+            "explanation": "The answer is correct. Because the leaf is part of the plant."
         },
         {
             "input": "Entity 1: soil \n Entity 2: moon",
@@ -23,7 +23,7 @@
         {
             "input": "Entity 1: cheese \n Entity 2: protein",
             "output": "yes",
-            "explanation": "The answer is correct because cheese contains various proteins, fats, and minerals. Therefore, these are the entities of the meronym."
+            "explanation": "The answer is correct because cheese contains various proteins, fats, and minerals."
         },
         {
             "input": "Entity 1: wasp \n Entity 2: feather",

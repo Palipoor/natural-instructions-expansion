@@ -8,12 +8,12 @@
     "Categories": [
         "Context Generation"
     ],
-    "Definition": "Given a sentence, generate a most likely context or previous statement. The previous statement should be relevant to the given statement.",
+    "Definition": "You are given a piece of text. You should answer with what is the most likely context(previous sentence) of the text. The previous sentence should be relevant to the given text.",
     "Positive Examples": [
         {
             "input": "Then, the camel stops and the woman gets down from the camel.",
             "output": "A woman rides a camel holding a rode with her right hand while a man pulls the camel.",
-            "explanation": "The output mentions that the woman was riding a camel. This is a correct context of the given statement since the woman has to be on the camel to come down from it."
+            "explanation": "The output mentions that the woman was riding a camel. This is a correct context of the given text since the woman has to be on the camel to come down from it."
         },
         {
             "input": "The camera is blurry as it focuses on the knitting.",
